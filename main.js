@@ -32,16 +32,7 @@ function getHardestHomework(obj){
         }
     }return homework
 }
-// function getHardestHomework(arr){
-//     let lowScore = 1000
-//     let name1 = ""
-//     for(let i = 0;i< arr.length;i++){
-//       if(arr[i].averageScore < lowScore && arr.length >= 1){
-//           lowScore = arr[i].averageScore
-//           name1 = arr[i].name
-//       }
-//     } return name1
-//   }  
+
 
 function createPhonebook(arr1, arr2){
 
@@ -53,18 +44,7 @@ function createPhonebook(arr1, arr2){
 }
 
 
-// function getHardestHomework(arrOfHomework){
-//     let easiest = arrOfHomework[0].level
-//     let easiestName = arrOfHomework[0].Name
-//     for(let i = 1; i < arrOfHomework.length; i++){
-//         let homework = arrOfHomework[i]
-//         if(homework.level < easiest){
-//             easiest = 
-//         }
-
-//     }
-// }
-
+// 
 // ┌─────────────────────────────────────┐
 // │ Do not modify code below this line. │
 // └─────────────────────────────────────┘
