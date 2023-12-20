@@ -3,28 +3,30 @@
 // └─────────────────┘
 
 function isAdmin(obj){
-    if(obj['userRole'] === "ADMIN"){
+    if(obj.userRole === "ADMIN"){
      return true
  }else{
      return false
  }
  }
+ //return obj.userRole === 'ADMIN'
 function getEmail(obj){
     return obj.firstName[0].toLowerCase() + obj.lastName.toLowerCase() + ".prsvr@gmail.com"
 }
 
 function getPlaylistLength(obj){
-    return obj['songs'].length
+    return obj.songs.length
 }
 
-function getHardestHomework(obj){
-    if(obj.length === 0){
+function getHardestHomework(arr){
+    //lowest score tracker
+    if(arr.length === 0){
         return ""
     }
-    let homework = obj[0].name;
-    let scoreAvg = obj[0].averageScore
-    for(let i = 0; i < obj.length; i++){
-        let complete = obj[i]
+    let homework = arr[0].name;
+    let scoreAvg = arr[0].averageScore
+    for(let i = 0; i < arr.length; i++){
+        let complete = arr[i]
         complete.averageScore
         if(complete.averageScore < scoreAvg){
             homework = complete.name
@@ -34,11 +36,11 @@ function getHardestHomework(obj){
 }
 
 
-function createPhonebook(arr1, arr2){
+function createPhonebook(name, num){
 
     const phonebook = {}
-    for(let i = 0; i < arr1.length; i++){
-       phonebook[arr1[i]] = arr2[i]
+    for(let i = 0; i < name.length; i++){
+       phonebook[name[i]] = num[i]
     }
     return phonebook
 }
